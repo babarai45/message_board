@@ -1,0 +1,38 @@
+<h1>home page for post views  </h1>
+
+<ul>
+    {% for post in post_model_list  %}
+    
+        <li>{{post.author_name}}</li>
+        <li>{{post.psot_title}}</li>
+        
+    
+    {% endfor %}
+
+
+</ul>
+
+
+
+<li>
+
+<table border="1">
+<tr>
+<th>ID </th>
+<th> Aurthor Name </th>
+<th> Post Title </th>
+<th> Time </th>
+</tr>
+
+{% for post in post_model_list  %}
+    <tr>
+        <td>{{post.id }}</td>
+        <td>{{post.author_name }}</td>
+        <td>{{post.psot_title }}</td>
+        <td>{{post.discriptions }}</td>
+    </tr>
+{% endfor %}
+
+
+</table>
+</li>

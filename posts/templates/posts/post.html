@@ -1,0 +1,29 @@
+<h1> post Page  </h1>
+
+
+</ul>
+
+
+
+<li>
+
+<table border="1">
+<tr>
+<th>ID </th>
+<th> Aurthor Name </th>
+<th> Post Title </th>
+<th> Time </th>
+</tr>
+
+{% for post in post_model_list  %}
+    <tr>
+        <td>{{post.id }}</td>
+        <td>{{post.author_name }}</td>
+        <td>{{post.psot_title }}</td>
+        <td>{{post.discriptions }}</td>
+    </tr>
+{% endfor %}
+
+
+</table>
+</li>
